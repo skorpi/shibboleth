@@ -1,0 +1,26 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+<h1>Login Form</h1>
+
+<f:flashMessages renderMode="div" />
+
+<table  class="tx_shibboleth" >
+	<tr>
+		<th><f:translate key="tx_shibboleth_domain_model_login.bla" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{logins}" as="login">
+		<tr>
+			<td><f:link.action action="show" arguments="{login : login}"> {login.bla}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{login : login}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{login : login}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Login</f:link.action>
+</f:section>

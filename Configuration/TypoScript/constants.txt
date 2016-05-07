@@ -1,0 +1,15 @@
+
+plugin.tx_shibboleth_loginform {
+	view {
+		# cat=plugin.tx_shibboleth_loginform/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:shibboleth/Resources/Private/Templates/
+		# cat=plugin.tx_shibboleth_loginform/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:shibboleth/Resources/Private/Partials/
+		# cat=plugin.tx_shibboleth_loginform/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:shibboleth/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_shibboleth_loginform//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

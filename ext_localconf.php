@@ -3,6 +3,20 @@ if (!defined ('TYPO3_MODE')) {
  	die ('Access denied.');
 }
 
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+		'Trstcnt.' . $_EXTKEY,
+		'Loginform',
+		array(
+				'LoginForm' => 'index',
+
+		),
+		// non-cacheable actions
+		array(
+				'LoginForm' => '',
+
+		)
+);
+
 $TYPO3_CONF_VARS['SVCONF']['auth']['setup']['FE_fetchUserIfNoSession'] = '1';
 $TYPO3_CONF_VARS['SVCONF']['auth']['setup']['BE_fetchUserIfNoSession'] = '1';
 

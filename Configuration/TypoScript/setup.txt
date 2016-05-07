@@ -1,0 +1,11 @@
+
+plugin.tx_shibboleth_loginform {
+	view {
+		templateRootPath = {$plugin.tx_shibboleth_loginform.view.templateRootPath}
+		partialRootPath = {$plugin.tx_shibboleth_loginform.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_shibboleth_loginform.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_shibboleth_loginform.persistence.storagePid}
+	}
+}
