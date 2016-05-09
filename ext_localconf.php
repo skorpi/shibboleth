@@ -5,14 +5,14 @@ if (!defined ('TYPO3_MODE')) {
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 		'Trstcnt.' . $_EXTKEY,
-		'Loginform',
+		'Loginlink',
 		array(
-				'LoginForm' => 'index',
+				'LoginLink' => 'index',
 
 		),
 		// non-cacheable actions
 		array(
-				'LoginForm' => '',
+				'LoginLink' => '',
 
 		)
 );

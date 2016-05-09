@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 		'Trstcnt.' . $_EXTKEY,
-		'Loginform',
-		'Shibboleth Login Form'
+		'Loginlink',
+		'Shibboleth Login Link (extbase)'
 );
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Shibboleth Extbase LoginForm Configuration');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Shibboleth Loginlink (extbase)');
 
 $TCA['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY.'_pi1']='layout,select_key';
 

@@ -1,11 +1,11 @@
 
-plugin.tx_shibboleth_loginform {
+plugin.tx_shibboleth_loginlink {
 	view {
-		templateRootPath = {$plugin.tx_shibboleth_loginform.view.templateRootPath}
-		partialRootPath = {$plugin.tx_shibboleth_loginform.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_shibboleth_loginform.view.layoutRootPath}
+		templateRootPath = {$plugin.tx_shibboleth_loginlink.view.templateRootPath}
+		partialRootPath = {$plugin.tx_shibboleth_loginlink.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_shibboleth_loginlink.view.layoutRootPath}
 	}
 	persistence {
-		storagePid = {$plugin.tx_shibboleth_loginform.persistence.storagePid}
+		storagePid = {$plugin.tx_shibboleth_loginlink.persistence.storagePid}
 	}
 }

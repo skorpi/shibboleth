@@ -15,18 +15,18 @@ namespace Trstcnt\Shibboleth\Tests\Unit\Controller;
  */
 
 /**
- * Test case for class Trstcnt\Shibboleth\Controller\LoginFormController.
+ * Test case for class Trstcnt\Shibboleth\Controller\LoginLinkController.
  *
  */
-class LoginFormControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
+class LoginLinkControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 	/**
-	 * @var \Trstcnt\Shibboleth1\Controller\LoginFormController
+	 * @var \Trstcnt\Shibboleth1\Controller\LoginLinkController
 	 */
 	protected $subject = NULL;
 
 	public function setUp() {
-		$this->subject = $this->getMock('Trstcnt\\Shibboleth\\Controller\\LoginFormController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
+		$this->subject = $this->getMock('Trstcnt\\Shibboleth\\Controller\\LoginLinkController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
 	public function tearDown() {

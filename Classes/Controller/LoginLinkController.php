@@ -17,9 +17,9 @@ namespace Trstcnt\Shibboleth\Controller;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
- * LoginFormController
+ * LoginLinkController
  */
-class LoginFormController extends ActionController {
+class LoginLinkController extends ActionController {
 
 	/**
 	 * action index
